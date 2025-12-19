@@ -17,8 +17,7 @@ window.onload = function() {
         window.setTimeout(function(){
             loading.remove();
         }, 10);
-
-    }, 10);
+    }, 3000);
 }
 
 
