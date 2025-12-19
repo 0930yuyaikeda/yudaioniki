@@ -268,6 +268,6 @@ window.setTimeout(function(){
         }
         }});
     }
-}, 3500);
+}, 4000);
 
 
