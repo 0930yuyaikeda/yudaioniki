@@ -1,16 +1,227 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import onichanTopImagePc from '../assets/img/onichan_top_pc.png';
+import onichanTopImageSp from '../assets/img/onichan_top_sp.png';
+import titleWhite from '../assets/img/title_white.png';
+import onichanProfile from '../assets/img/onichan_profile.jpg';
+import speaker from '../assets/img/speaker.jpeg';
+import community from '../assets/img/community.jpeg';
+import session from '../assets/img/session.jpeg';
+import englishEducation from '../assets/img/english_education.jpeg';
+import tour from '../assets/img/tour.jpeg';
+import other from '../assets/img/other.jpg';
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+    <div class="w-full font-serif bg-black">
+        <div class="bg-black">
+            <div class="md:hidden">
+                <div class="w-full ">
+                    <img src={onichanTopImageSp.src}/>
+                </div>
+                <div class="px-4 mt-8">
+                    <img src={titleWhite.src}/>
+                </div>
+            </div>
+
+            <div class="hidden md:block h-screen">
+                <div class="w-full  bg-black absolute z-0">
+                    <img src={onichanTopImagePc.src}/>
+                </div>
+                <div class="absolute w-1/2 z-10 px-35 pt-45">
+                    <img src={titleWhite.src}/>
+                </div>
+            </div>
+
+            <div class="p-4 md:p-10">
+                <h1 class="text-white w-full text-center text-3xl">唯一無二の、自分を極めろ</h1>
+                <div class="mt-8">
+                    <p class="text-white text-base w-full text-center mt-4">「人生は一度きり」この言葉を聞いたことのある人は多いだろう。</p>
+                    <p class="text-white text-base w-full text-center mt-4">しかし、本当の意味で、それを理解し、行動できている人間がどれだけいるだろう。</p>
+                    <p class="text-white text-base w-full text-center mt-4">モノと情報に溢れるイマの社会。</p>
+                    <p class="text-white text-base w-full text-center mt-4">そんな中で、どうしても周りに流され、自分の声を聞けず、生きている人間が多いのではないだろうか。</p>
+                    <p class="text-white text-base w-full text-center mt-4">しかし、あなたはあなたです。</p>
+                    <p class="text-white text-base w-full text-center mt-4">誰と比べようが、</p>
+                    <p class="text-white text-base w-full text-center mt-4">どれだけ頑張っても、他の”誰か”にはなれない。</p>
+                    <p class="text-white text-base w-full text-center mt-4">どんなに頑張っても、”あなた”になれる人間は、この世のどこを探しても、どこにもいないのです。</p>
+                    <p class="text-white text-base w-full text-center mt-4">81億人</p>
+                    <p class="text-white text-base w-full text-center mt-4">あなたは、生まれた時から、いや、生まれる前から、唯一無二の存在なのです。</p>
+                    <p class="text-white text-base w-full text-center mt-4">あなたがこの世界に、イマのこの時代に、生まれてきた”意味”は何なのだろう。</p>
+                    <p class="text-white text-base w-full text-center mt-4">その答えはすぐに見つからないかもしれない。</p>
+                    <p class="text-white text-base w-full text-center mt-4">でも、”それ”を探し続けることこそが、人生なのではないだろうか。</p>
+                    <p class="text-white text-base w-full text-center mt-4">そして、”それ”を見つけた時、次の、新しい世界が目の前に広がり、本当の意味での人生＝魂のjourneyが始まるのだ。</p>
+                    <p class="text-white text-base w-full text-center mt-4">魂を磨き、鍛え、DNAに刻み、次の世代へ繋ぐ。</p>
+                    <p class="text-white text-base w-full text-center mt-4">それが、本当の意味での”進化”であり、”成長”なのではないだろうか。</p>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 bg-white md:p-10">
+            <h2 class="text-black text-lg font-semibold w-full text-center underline">最新情報</h2>
+            <p class="text-black text-base w-full text-center mt-10">準備中です。</p>
+            <div class="w-full text-center mt-10 ">
+                <button class="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">さらにに詳しく</button>
+            </div>
+        </div>
+        <div class="bg-black pt-4 pb-4 md:p-10">
+            <h2 class=" text-white text-lg font-semibold w-full text-center underline">事業内容</h2>
+            <!--====================*** SP ***=========================-->
+            <div class="pt-4 md:hidden">
+                <div id="carousel-example" class="relative w-full">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-base sm:h-64 xl:h-80 2xl:h-96">
+                        <!-- Item 1 -->
+                        <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
+                            <a href="./preparation">
+                                <img src={speaker.src} class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..."/>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div id="carousel-item-2" class="hidden duration-700 ease-in-out">
+                            <a href="./preparation">
+                                <img src={community.src} class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..."/>
+                            </a>
+                        </div>
+                        <!-- Item 3 -->
+                        <div id="carousel-item-3" class="hidden duration-700 ease-in-out">
+                            <a href="./preparation">
+                                <img src={session.src} class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..."/>
+                            </a>
+                        </div>
+                        <!-- Item 4 -->
+                        <div id="carousel-item-4" class="hidden duration-700 ease-in-out">
+                            <a href="./preparation">
+                                <img src={englishEducation.src} class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
+                            </a>
+                        </div>
+                        <!-- Item 5 -->
+                        <div id="carousel-item-5" class="hidden duration-700 ease-in-out">
+                            <a href="./preparation">
+                                <img src={tour.src} class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
+                            </a>
+                        </div>
+                        <!-- Item 6 -->
+                        <div id="carousel-item-6" class="hidden duration-700 ease-in-out">
+                            <a href="./preparation">
+                                <img src={other.src} class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2" alt="..."/>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse">
+                        <button id="carousel-indicator-1" type="button" class="h-3 w-3 rounded-base" aria-current="true" aria-label="Slide 1"></button>
+                        <button id="carousel-indicator-2" type="button" class="h-3 w-3 rounded-base" aria-current="false" aria-label="Slide 2"></button>
+                        <button id="carousel-indicator-3" type="button" class="h-3 w-3 rounded-base" aria-current="false" aria-label="Slide 3"></button>
+                        <button id="carousel-indicator-4" type="button" class="h-3 w-3 rounded-base" aria-current="false" aria-label="Slide 4"></button>
+                        <button id="carousel-indicator-5" type="button" class="h-3 w-3 rounded-base" aria-current="false" aria-label="Slide 5"></button>
+                        <button id="carousel-indicator-6" type="button" class="h-3 w-3 rounded-base" aria-current="false" aria-label="Slide 6"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button id="data-carousel-prev" type="button" class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none">
+                        <span class="inline-flex h-10 w-10 items-center justify-center rounded-base bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
+                            <svg class="h-4 w-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                            </svg>
+                            <span class="hidden">Previous</span>
+                        </span>
+                    </button>
+                    <button id="data-carousel-next" type="button" class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none">
+                        <span class="inline-flex h-10 w-10 items-center justify-center rounded-base bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
+                            <svg class="h-4 w-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="hidden">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <!--====================*** PC ***=========================-->
+            <div class="hidden md:flex flex-row pt-10 ">
+                <div class="w-1/2 text-white pl-20 pr-10">
+                    <div class="w-full aspect-square">
+                        <div class="flex flex-row h-1/4">
+                            <div class="w-full h-full flex items-center justify-center bg-white hover:opacity-80">
+                                <div class="font-mono text-8xl text-center text-red-600">
+                                    SPEAKER
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row h-1/4">
+                            <div class="flex-col w-1/2 h-full flex items-center justify-center bg-white hover:opacity-80">
+                                <div class="font-mono text-4xl text-center text-orange-500 hover:opacity-80">
+                                    COUMMUNITY
+                                </div>
+                            </div>
+                            <div class="flex-col w-1/2 h-full flex items-center justify-center bg-white hover:opacity-80">
+                                <div class="font-mono text-4xl text-center text-blue-600 hover:opacity-80">
+                                    SESSOIN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row h-1/4">
+                            <div class="flex-col w-1/2 h-full flex items-center justify-center bg-white hover:opacity-80">
+                                <div class="font-mono text-4xl text-center text-green-600 hover:opacity-80">
+                                    ENGLISH EDCATION
+                                </div>
+                            </div>
+                            <div class="flex-col w-1/2 h-full flex items-center justify-center bg-white hover:opacity-80">
+                                <div class="font-mono text-4xl text-center text-yellow-500 hover:opacity-80">
+                                    TOUR
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-start h-1/4 items-center">
+                            <div class="flex-col w-1/4 h-full flex items-center justify-center bg-white hover:opacity-80">
+                                <div class="font-mono text-2xl  text-violet-600 hover:opacity-80">
+                                    OTHER
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2 text-white pr-20 pl-10">
+                    <div class="w-full aspect-square">
+                        <img class="w-full h-full object-cover" src={tour.src} alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white pt-4 pb-4 md:p-10">
+            <h2 class="text-black text-lg font-semibold w-full text-center underline">自己紹介</h2>
+            <div class="md:flex md:mt-10">
+                <div class="md:w-1/6"></div>
+                <div class="px-4 w-full md:w-1/3">
+                    <img src={onichanProfile.src} alt="">
+                </div>
+                <div class="px-4 md:w-1/3">
+                    <h2 class="text-black w-full text-center text-xl font-semibold">鬼城雄大 / YUDAI ONIKI</h2>
+                    <p class="text-black w-full text-left mt-4 text-sm">1990年7月6日、山口県萩市出身</p>
+                    <p class="text-black w-full text-left mt-4">
+                        中学教員、オーストラリア滞在や英語コンサルティング会社経て独立。「人の可能性を引き出す」使命を胸に教育を軸とした「おにちゃん会」を主宰している。現在では全国で150回以上の開催を重ねている。
+                    </p>
+                    <p class="text-black w-full text-left mt-4 text-sm">
+                        <a href="">INSTAGRAM</a> | <a href="">NOTE</a>
+                    </p>
+                    <div class="w-full text-center mt-4">
+                        <button class="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">さらにに詳しく</button>
+                    </div>
+                </div>
+                <div class="md:w-1/6"></div>
+            </div>
+        </div>
+        <div class="bg-black p-4 md:p-10">
+            <h2 class="text-white text-lg font-semibold w-full text-center underline">問い合わせ</h2>
+            <p class="text-white w-full text-center mt-10">
+                皆様のお声に全力でお応えしていきます。<br/>お仕事のご依頼やご相談はこちらからお気軽にお問い合わせください。
+            </p>
+            <div class="w-full text-center mt-10">
+                <button class="bg-white hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full">問い合わせ</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        import '../scripts/loading-script.js';
+        import '../scripts/carousel.js';
+    </script>
+</Layout>
